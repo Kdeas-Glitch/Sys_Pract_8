@@ -7,32 +7,31 @@
 const int turtle_count = 11;
 volatile int n[turtle_count] = {0};
 volatile int w = 0;
+volatile int T[50] = {0};
 
 
 DWORD WINAPI Add(LPVOID iNum) {
-    std::random_device rd;   // non-deterministic generator
-    std::mt19937 gen(rd());  // to seed mersenne twister.
+    std::random_device rd;
+    std::mt19937 gen(rd());
     std::uniform_int_distribution<> dist(0, 2);
     std::uniform_int_distribution<> dist_2(1000, 3000);
-    int Turtle_Id=(int)iNum;
-    int i=n[Turtle_Id];
-    while (n[Turtle_Id] <50){
-        int gap = (dist(gen));
+    int gap = 0;
+    while (gap <50){
+        T[gap] = 0;
         int time = (dist_2(gen));
-        n[Turtle_Id] += gap;
-        Sleep(50);
+        gap += (dist(gen));
+        T[gap] = (int)iNum;
+        Sleep(100);
     }
-    n[Turtle_Id] += w;
+    n[(int)iNum] += w;
     w++;
     return 0;
-
 }
 
 
 int main()
 {
     srand(time(NULL));
-    int T[50];
     setlocale(0, "rus");
 
     HANDLE hThread[turtle_count];
@@ -45,22 +44,7 @@ int main()
         }
         count++;
     }
-    count++;
     while (w != turtle_count) {
-        for (int j = 0; j < 50; j++) {
-            T[j] = 0;
-        }
-        for (int i = 0; i < turtle_count; i++) {
-            if (n[i] < 50) {
-                if (T[n[i]] == 0) {
-                    T[n[i]] = i + 1;
-                }
-                else
-                {
-                    T[n[i]] = T[n[i]] + i+1;
-                }
-            }
-        }
         for (int j = 0; j < 50; j++) {
             std::cout<< std::setw(2) << T[j] << "\t";
         }

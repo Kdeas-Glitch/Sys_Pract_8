@@ -1,6 +1,8 @@
 ﻿  Pract_8_Sys.cpp
-C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(17,19): warning C4311: приведение типов: усечение указателя из "LPVOID" в "int"
-C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(17,19): warning C4302: приведение типов: усечение из "LPVOID" к "int"
-C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(34,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(23,18): warning C4311: приведение типов: усечение указателя из "LPVOID" в "int"
+C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(23,18): warning C4302: приведение типов: усечение из "LPVOID" к "int"
+C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(27,7): warning C4311: приведение типов: усечение указателя из "LPVOID" в "int"
+C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(27,7): warning C4302: приведение типов: усечение из "LPVOID" к "int"
+C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(35,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\Pract_8_Sys\Pract_8_Sys.cpp(42,49): warning C4312: приведение типов: преобразование из "int" в "void *" большего размера
   Pract_8_Sys.vcxproj -> C:\Users\st310-04\Desktop\Демин\Pract_8_Sys\x64\Debug\Pract_8_Sys.exe
